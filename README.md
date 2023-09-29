@@ -17,4 +17,5 @@ Tasks that are actively worked by me.
 - Fixed a couple of things for Art.
 - Fixed a permissions problem for Kelling. His student had set his own umask to 0002, and that prevented group write to the working directory.
 - Debugged a problem with a container not accepting forwarded https traffic.
-- Carlos Hurtado Martilletti wants help "executing some code on Spydur." 
+- Carlos Hurtado Martilletti wants help "executing some code on Spydur."
+- Changed the permissions on Kelling's student's $HOME so that he can browse them with some kind of windows program.
