@@ -34,4 +34,4 @@ Tasks that are actively worked by me.
 - Spent an hour with Alina talking over her recent experience at the Women in Computing conference in Orlando, her program, and the job prospects.
 - Cloned Alina's program onto Quark for testing. Ran into an interesting roadblock with the `pam_slurm_adopt` module. Need to read about that one.
 - Sent Gladys and message about meeting in Charlottesville next week to discuss WHPC.
-- 
+- Got the license file from QChem for Sarah.
