@@ -35,3 +35,13 @@ Tasks that are actively worked by me.
 - Cloned Alina's program onto Quark for testing. Ran into an interesting roadblock with the `pam_slurm_adopt` module. Need to read about that one.
 - Sent Gladys and message about meeting in Charlottesville next week to discuss WHPC.
 - Got the license file from QChem for Sarah.
+
+## October 3
+- Enlisted Sasko's help to test Alina's program as the root user on quark. This is a bit of a bomb; the pam_slurm_adopt module prevents even the SlurmUser from logging into compute nodes. That seems like an ill conceived idea.
+- Wrote short message about Linux software as the topic is related to the QRC.
+- Continued the move of Jory Brinkerhoff's files to /scratch. Space on /scratch is not "tight," but I am realizing the need to work on the duplicate file identification for the old Parish Lab data recovery effort.
+- I submitted ticket #20581366 to install `fdupes` on Spydur. With 87T of files to examine, it is worth a few hours of analysis to determine the best course of action. I think this problem will recur over the next few years, and we likely need to build a Merkle tree for the files so that we have a record of files we have already examined for duplicates.
+- I wrote a description of several ongoing projects for Joao to help him know what he is getting into --- file dedup-ing, Linux 7 to 8 migration, need to create a repo of documents for the "how to" operations.
+- Sasko installed `fdupes`. I cloned the git repo of the source. A little analysis has convinced me that it may not be much faster than `undeux`. Same for jdupes. Almost all the latency is going to be in reading the files and calculating the hashes. One of the optimizations in `undeux` is doing a stochastic analysis of files that are the same size rather than directly calculating the MD5 or SHA1 of the entire file. The 6350R processor has special instructions for the SHA-256 algorithm. AMD processors have instructions for the AES operations. Interesting competitive choice.
+- Jory's files are still rsync-ing over to /scratch. I'm using ionice on it to be kind to everyone else.
+
