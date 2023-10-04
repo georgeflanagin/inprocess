@@ -45,3 +45,11 @@ Tasks that are actively worked by me.
 - Sasko installed `fdupes`. I cloned the git repo of the source. A little analysis has convinced me that it may not be much faster than `undeux`. Same for jdupes. Almost all the latency is going to be in reading the files and calculating the hashes. One of the optimizations in `undeux` is doing a stochastic analysis of files that are the same size rather than directly calculating the MD5 or SHA1 of the entire file. The 6350R processor has special instructions for the SHA-256 algorithm. AMD processors have instructions for the AES operations. Interesting competitive choice.
 - Jory's files are still rsync-ing over to /scratch. I'm using ionice on it to be kind to everyone else.
 
+## October 4
+- Distributed the NGA materials to Carol for further distro to DADS.
+- Had a 30 minute powwow with Carol.
+- Quite a bit of back and forth with MARIA members about the pam_slurm_adpot problems. I have thought of a way around it; it will be interesting to get Sasko's reaction. 
+- Rescheduled the spydur switch work for Monday at 3pm. I put a job in the cron to suspend all the running jobs at 14:55 on Monday.
+- Finished the clean up of Jory Brinkerhoff's files. Curiously, he has not responded to my email informing him about my changes.
+- I have a workable design for a duplicate file identifier.
+- I restored newton onto alexis.
