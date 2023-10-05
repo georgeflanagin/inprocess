@@ -53,3 +53,12 @@ Tasks that are actively worked by me.
 - Finished the clean up of Jory Brinkerhoff's files. Curiously, he has not responded to my email informing him about my changes.
 - I have a workable design for a duplicate file identifier.
 - I restored newton onto alexis.
+- Handled an after-hours request from Saif to look into the cause of some very slow response on spiderweb. I was unable to determine the cause --- plenty of free memory, and the processor load was about 5.5.
+
+## October 5
+- Catherine wants some options for ensuring the safety of a dataset that she is developing. I wrote up some options, and requested details.
+- Met with Alina and talked about career plans, file de-dup, and the work-around for the problems with getting data from nodes that do not allow login.
+- Installed StreamLit 1.27 for Saif on spiderweb, updated from 1.12. We discussed the problems he saw yesterday, and it seems that the problems were local to his browser rather than the webserver process.
+- Updated the slurm.conf file on spydur to reserve 2 cores per node to prevent my getting locked out of oversubscribed nodes.
+- qchem 6.1 is now working on sarah. Need student testing. 
+- I have at least partially hacked the qchem license manager. 
