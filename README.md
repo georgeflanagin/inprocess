@@ -1,4 +1,4 @@
-# inprocess
+f # inprocess
 Tasks that are actively worked by me.
 
 ## Sept 29
@@ -65,4 +65,7 @@ Tasks that are actively worked by me.
 
 ## October 6
 - Talked to Saif about the AI Faculty committee and setting up a streamlit server for the OpenAI API.
-- Setup to begin the testing of application installs on the new and updated workstations in the Parish Lab. Collecting the examples and automating the testing would be a good project for Joao after his transfer. 
+- Setup to begin the testing of application installs on the new and updated workstations in the Parish Lab. Collecting the examples and automating the testing would be a good project for Joao after his transfer.
+- Squeezed quite a bit of performance out of the directory / file traversal for the dedup problem. I sent Sasko a note asking about the impact of running my software to collect the data.
+- I have joined the AI working group after talking to Saif this afternoon. I had already purchased some Dall-e credits and a subscription to GPT4 for my personal use, so this seems like a logical direction.
+- Met with Alina to discuss the Docker container for Activity View, and the workarounds for environments where the program cannot ssh to the compute nodes.
