@@ -62,3 +62,7 @@ Tasks that are actively worked by me.
 - Updated the slurm.conf file on spydur to reserve 2 cores per node to prevent my getting locked out of oversubscribed nodes.
 - qchem 6.1 is now working on sarah. Need student testing. 
 - I have at least partially hacked the qchem license manager. 
+
+## October 6
+- Talked to Saif about the AI Faculty committee and setting up a streamlit server for the OpenAI API.
+- Setup to begin the testing of application installs on the new and updated workstations in the Parish Lab. Collecting the examples and automating the testing would be a good project for Joao after his transfer. 
