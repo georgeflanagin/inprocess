@@ -69,3 +69,16 @@ Tasks that are actively worked by me.
 - Squeezed quite a bit of performance out of the directory / file traversal for the dedup problem. I sent Sasko a note asking about the impact of running my software to collect the data.
 - I have joined the AI working group after talking to Saif this afternoon. I had already purchased some Dall-e credits and a subscription to GPT4 for my personal use, so this seems like a logical direction.
 - Met with Alina to discuss the Docker container for Activity View, and the workarounds for environments where the program cannot ssh to the compute nodes.
+
+## October 9
+- Had a good opportunity to work on `undeux` with only minor interruptions this morning. It is scanning files at an impressive (to me) speed, although I have not tried it on a large set like the data recovery project on spydur.
+- Carlos Hurtado Martilletti authored a runaway job on spiderweb. I laid out the seven deadly sins for him, and I hope he will cooperate on Spydur. He seems determined to refuse help. The seven deadly sins are:
+1. Run jobs on the headnode.
+1. Install software in your $HOME directory.
+1. Use salloc & srun to reserve a node and use it interactively.
+1. Run a job for more than five minutes until you are sure you have not created a runaway job. _Always execute your code inside /usr/bin/time so that we can see how much memory, etc., the job is using by looking at the tombstone._
+1. Run CPU jobs on the GPU nodes. 
+1. Ask for more than 50 cores on a node.
+1. Run jobs that span multiple nodes.
+- The cronjob to suspend all SLURM jobs worked perfectly at 14:55. Nice to have the convenience of typing `suspend_all` and have my program figure out what's running.
+- ACT did their switch magic at 3pm.
